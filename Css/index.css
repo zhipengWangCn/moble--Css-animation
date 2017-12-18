@@ -1,0 +1,1000 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#showDiv {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#box {
+	width: 100%;
+	height: 100%;
+}
+
+#first {
+	width: 100%;
+	height: 100%;
+	background: url(../img/pageone/bg.jpg);
+	background-size: 100% 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#firstTop {
+	width: 80%;
+	height: 40%;
+	background: lightgoldenrodyellow;
+	margin: 10% auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+#firstTwo {
+	width: 80%;
+	height: 40%;
+	margin: 10% auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+#firstThree {
+	width: 80%;
+	height: 40%;
+	margin: 10% auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+
+
+/*第一层动画*/
+
+.one .firstTop>img:nth-child(1) {
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 47%;
+	animation: 1s donghuaOne forwards;
+}
+
+@keyframes donghuaOne {
+	from {
+		position: absolute;
+		left: -60%;
+		height: 100%;
+		width: 47%;
+	}
+	100% {
+		position: absolute;
+		left: 0;
+		height: 100%;
+		width: 47%;
+	}
+}
+
+.one .firstTop>img:nth-child(2) {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	animation: 1s donghuaTwo forwards;
+}
+
+@keyframes donghuaTwo {
+	from {
+		position: absolute;
+		right: -100%;
+		height: 100%;
+		width: 100%;
+	}
+	100% {
+		position: absolute;
+		right: 0;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.one .firstTop>img:nth-child(3) {
+	position: absolute;
+	bottom: 0%;
+	height: 70%;
+	width: 100%;
+	animation: 1s donghuaThree forwards;
+}
+
+@keyframes donghuaThree {
+	from {
+		position: absolute;
+		bottom: -100%;
+		height: 70%;
+		width: 100%;
+	}
+	100% {
+		position: absolute;
+		bottom: 0%;
+		height: 70%;
+		width: 100%;
+	}
+}
+
+
+/*第二层动画*/
+
+.one .firstTwo>img:nth-child(1) {
+	position: absolute;
+	top: -100%;
+	left: 40%;
+	height: 80%;
+	width: 20%;
+	z-index: 1;
+	opacity: 0;
+	animation: 1s 1s donghuaFour forwards;
+}
+
+@keyframes donghuaFour {
+	from {
+		position: absolute;
+		top: -100%;
+		height: 80%;
+		width: 20%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		top: 0;
+		left: 40%;
+		height: 80%;
+		width: 20%;
+		opacity: 1;
+	}
+}
+
+.one .firstTwo>img:nth-child(2) {
+	position: absolute;
+	left: 50%;
+	height: 50%;
+	width: 10%;
+	opacity: 0;
+	animation: 1s 1s donghuaFive forwards;
+}
+
+@keyframes donghuaFive {
+	from {
+		position: absolute;
+		top: -100%;
+		left: 80%;
+		height: 50%;
+		width: 10%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		height: 50%;
+		width: 10%;
+		opacity: 1;
+	}
+}
+
+.one .firstTwo>img:nth-child(3) {
+	position: absolute;
+	bottom: 0%;
+	right: 0;
+	width: 80%;
+	height: 50%;
+	opacity: 0;
+	animation: 1s 1s donghuaSix forwards;
+}
+
+@keyframes donghuaSix {
+	from {
+		position: absolute;
+		bottom: -100%;
+		right: 0;
+		height: 50%;
+		width: 10%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		bottom: 0%;
+		right: 0;
+		width: 80%;
+		height: 50%;
+		opacity: 1;
+	}
+}
+
+.one .firstTwo>img:nth-child(4) {
+	position: absolute;
+	bottom: 20%;
+	left: 15%;
+	width: 32.5%;
+	height: 65%;
+	opacity: 0;
+	animation: 1s 1s donghuaSeven forwards;
+}
+
+@keyframes donghuaSeven {
+	from {
+		position: absolute;
+		left: -100%;
+		width: 32.5%;
+		height: 65%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		bottom: 20%;
+		left: 15%;
+		width: 32.5%;
+		height: 65%;
+		opacity: 1;
+	}
+}
+
+
+/*第三层动画*/
+
+.one #firstThree>img:nth-child(1) {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	height: 20%;
+	opacity: 0;
+	animation: 1s 2s donghuaEight forwards;
+}
+
+@keyframes donghuaEight {
+	from {
+		position: absolute;
+		left: -100%;
+		height: 20%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		height: 20%;
+		opacity: 1;
+	}
+}
+
+.one #firstThree>img:nth-child(2) {
+	position: absolute;
+	height: 14%;
+	opacity: 0;
+	animation: 1s 2s donghuaNine forwards;
+}
+
+@keyframes donghuaNine {
+	from {
+		position: absolute;
+		left: -100%;
+		top: 0%;
+		height: 14%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		top: 43%;
+		left: 2.5%;
+		height: 14%;
+		opacity: 1;
+	}
+}
+
+.one #firstThree>img:nth-child(3) {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	height: 80%;
+	width: 20%;
+	opacity: 0;
+	animation: 1s 2s donghuaTen forwards;
+}
+
+@keyframes donghuaTen {
+	from {
+		position: absolute;
+		left: -100%;
+		top: 0%;
+		height: 80%;
+		width: 20%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		top: 20%;
+		left: 20%;
+		height: 80%;
+		width: 20%;
+		opacity: 1;
+	}
+}
+
+.one #firstThree>img:nth-child(4) {
+	position: absolute;
+	top: 10%;
+	left: 35%;
+	height: 60%;
+	width: 15%;
+	opacity: 0;
+	animation: 1s 2s donghuaEleven forwards;
+}
+
+@keyframes donghuaEleven {
+	from {
+		position: absolute;
+		left: 35%;
+		top: -100%;
+		height: 60%;
+		width: 15%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		top: 10%;
+		left: 35%;
+		height: 60%;
+		width: 15%;
+		opacity: 1;
+	}
+}
+
+.one #firstThree>img:nth-child(5) {
+	position: absolute;
+	top: 60%;
+	right: 0%;
+	height: 30%;
+	width: 45%;
+	opacity: 0;
+	animation: 1s 2s donghuaTwelve forwards;
+}
+
+@keyframes donghuaTwelve {
+	from {
+		position: absolute;
+		top: 80%;
+		right: -100%;
+		height: 30%;
+		width: 45%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		top: 60%;
+		right: 0%;
+		height: 30%;
+		width: 45%;
+		opacity: 1;
+	}
+}
+
+.one #firstThree>img:nth-child(6) {
+	position: absolute;
+	bottom: 0;
+	right: 0%;
+	height: 15%;
+	width: 60%;
+	opacity: 0;
+	animation: 1s 2s donghuaThirteen forwards;
+}
+
+@keyframes donghuaThirteen {
+	from {
+		position: absolute;
+		bottom: -100%;
+		right: -100%;
+		height: 15%;
+		width: 60%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		bottom: 0;
+		right: 0%;
+		height: 15%;
+		width: 60%;
+		opacity: 1;
+	}
+}
+
+.one #firstThree>img:nth-child(7) {
+	position: absolute;
+	left: 22%;
+	top: 26%;
+	height: 10%;
+	width: 3.5%;
+	opacity: 0;
+	animation: 1s 2s donghuaFourteen forwards;
+}
+
+@keyframes donghuaFourteen {
+	from {
+		position: absolute;
+		left: -50%;
+		top: -100%;
+		height: 10%;
+		width: 3.5%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		left: 22%;
+		top: 26%;
+		height: 10%;
+		width: 3.5%;
+		opacity: 1;
+	}
+}
+
+
+/*流星*/
+
+#left {
+	width: 100%;
+	height: 60%;
+	position: absolute;
+	top: 20%;
+}
+
+#left>img:nth-child(1) {
+	position: absolute;
+	right: 10%;
+	bottom:20%;
+}
+
+#left>img:nth-child(2) {
+	position: absolute;
+	left: 10%;
+	top: 50%;
+}
+
+#left>img:nth-child(3) {
+	position: absolute;
+	left: -5%;
+	top: 0%;
+	opacity: 0;
+	animation: 3s 1s donghuaFifteen infinite;
+}
+
+@keyframes donghuaFifteen {
+	from {
+		position: absolute;
+		left: -5%;
+		top: 0%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		left: 100%;
+		top: 34%;
+		opacity: 1;
+	}
+}
+
+#left>img:nth-child(4) {
+	position: absolute;
+	right: -5%;
+	top: 50%;
+	opacity: 0;
+	animation: 3s 1s donghuaSixteen infinite;
+}
+
+@keyframes donghuaSixteen {
+	from {
+		position: absolute;
+		right: -5%;
+		top: 50%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		right: 100%;
+		top: 20%;
+		opacity: 1;
+	}
+}
+
+#left>img:nth-child(5) {
+	position: absolute;
+	right: 0%;
+	top: 50%;
+	opacity: 0;
+	animation: 3s 2s donghuaSeventeen infinite;
+}
+
+@keyframes donghuaSeventeen {
+	from {
+		position: absolute;
+		right: -5%;
+		top: 60%;
+		opacity: 1;
+	}
+	100% {
+		position: absolute;
+		right: 100%;
+		top: 80%;
+		opacity: 1;
+	}
+}
+
+#firstFoot {
+	width: 80%;
+	height: 20%;
+	position: absolute;
+	top: 55%;
+	right: 10%;
+}
+
+#firstFoot>img {
+	position: absolute;
+	width: 0%;
+	top: 50%;
+	right: 50%;
+	height: 0%;
+	opacity: 0;
+	animation: 1s 2s donghuaWenzi forwards;
+}
+
+@keyframes donghuaWenzi {
+	from {
+		position: absolute;
+		width: 0%;
+		top: 50%;
+		right: 50%;
+		bottom: 0%;
+		height: 0%;
+	}
+	100% {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0%;
+		right: 0%;
+		opacity: 1;
+	}
+}
+
+#footDown {
+	width: 100%;
+	height: 10%;
+	position: absolute;
+	bottom: 0%;
+	transform-style: preserve-3d;
+}
+
+#footDown>img:nth-child(1) {
+	width: 20%;
+	position: absolute;
+	left: 40%;
+	animation: 2s donghuaBiaozhi infinite;
+	z-index: 2;
+}
+
+@keyframes donghuaBiaozhi {
+	from {
+		top: -10%;
+	}
+	50% {
+		top: 20%;
+	}
+	100% {
+		top: -10%;
+	}
+}
+
+#footDown>img:nth-child(2) {
+	width: 15%;
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+	z-index: 1;
+	animation: 3s donghuaMusic infinite forwards linear;
+}
+
+@keyframes donghuaMusic {
+	from {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+
+/*第二页*/
+
+#second {
+	width: 100%;
+	height: 100%;
+	background: url(../img/pagesix/bgy.jpg);
+	overflow: hidden;
+	position: relative;
+}
+
+.ball {
+	width: 100%;
+	height: 100%;
+}
+
+.three #two1{
+	width: 80%;
+	height: 5%;
+	position: absolute;
+	left: 10%;
+	top: 75%;
+	animation: 1s donghuatwo1 forwards;
+}
+
+@keyframes donghuatwo1 {
+	from {
+		position: absolute;
+		left: -100%;
+	}
+	100% {
+		position: absolute;
+		left: 10%;
+	}
+}
+
+.three #two2{
+	width: 80%;
+	height: 5%;
+	position: absolute;
+	bottom: 12%;
+	right: 10%;
+	animation: 1s donghuatwo2 forwards;
+}
+
+@keyframes donghuatwo2 {
+	from {
+		position: absolute;
+		right: -100%;
+	}
+	100% {
+		position: absolute;
+		right: 10%;
+	}
+}
+
+
+/*第三*/
+
+#third {
+	width: 100%;
+	height: 100%;
+	background: url(../img/pagesix/bgy.jpg);
+	overflow: hidden;
+	position: relative;
+}
+
+.third1 {
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	width: 10%;
+	height: 5%;
+	animation: 1s donghuathree infinite linear;
+}
+
+.third2 {
+	position: absolute;
+	right: 10%;
+	top: 10%;
+	width: 30%;
+	animation: 1s donghuathree infinite linear;
+}
+
+.third3 {
+	position: absolute;
+	left: 15%;
+	top: 20%;
+	width: 35%;
+	animation: 1s donghuathree infinite linear;
+}
+
+.third4 {
+	position: absolute;
+	right: 15%;
+	top: 28%;
+	width: 10%;
+	animation: 1s donghuathree infinite linear;
+}
+
+.third5 {
+	position: absolute;
+	right: 5%;
+	top: 40%;
+	animation: 1s donghuathree infinite linear;
+}
+
+.third6 {
+	position: absolute;
+	left: 5%;
+	top: 55%;
+	animation: 1s donghuathree infinite linear;
+}
+
+.third7 {
+	position: absolute;
+	right: 5%;
+	bottom: 15%;
+	animation: 1s donghuathree infinite linear;
+}
+
+.third8 {
+	position: absolute;
+	left: 10%;
+	bottom: 15%;
+	width: 15%;
+	animation: 3s donghuathree infinite linear;
+}
+
+@keyframes donghuathree {
+	from {
+		transform: rotateZ(0deg);
+	}
+	50% {
+		position: absolute;
+		right: 10%;
+		transform: rotateZ(10deg);
+	}
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+
+
+/*第四页*/
+
+#fourth {
+	width: 100%;
+	height: 100%;
+	background: url(../img/pagesix/bgy.jpg);
+	background-size: 100% 100%;
+	overflow: hidden;
+	position: relative;
+}
+.bg{
+	width: 100%;
+	height: 100%;
+}
+.two>#fourth1 {
+	position: absolute;
+	animation: 1s donghuafour1 forwards;
+}
+
+@keyframes donghuafour1 {
+	from {
+		top: 18%;
+		left: 39%;
+		width: 3%;
+	}
+	100% {
+		top: 13%;
+		left: 34%;
+		width: 20%;
+	}
+}
+
+.two>#fourth2 {
+	position: absolute;
+	top: 20%;
+	right: 8%;
+	width: 3%;
+	animation: 1s 1s donghuafour2 forwards;
+}
+
+@keyframes donghuafour2 {
+	from {
+		top: 20%;
+		right: 8%;
+		width: 3%;
+	}
+	100% {
+		top: 22%;
+		right: 8%;
+		width: 20%;
+	}
+}
+
+.two>#fourth3 {
+	position: absolute;
+	top: 26%;
+	left: 5%;
+	width: 3%;
+	animation: 1s 1s donghuafour3 forwards;
+}
+
+@keyframes donghuafour3 {
+	from {
+		top: 26%;
+		left: 5%;
+		width: 3%;
+	}
+	100% {
+		top: 26%;
+		left: 8%;
+		width: 20%;
+	}
+}
+
+.two>#fourth4 {
+	position: absolute;
+	top: 37%;
+	right: 5%;
+	animation: 1s donghuafour4 forwards;
+}
+
+@keyframes donghuafour4 {
+	from {
+		top: 32%;
+		right: 5%;
+		width: 3%;
+	}
+	100% {
+		top: 37%;
+		right: 5%;
+		width: 20%;
+	}
+}
+
+.two>#fourth5 {
+	position: absolute;
+	top: 45%;
+	left: 20%;
+	animation: 1s donghuafour5 forwards;
+}
+
+@keyframes donghuafour5 {
+	from {
+		top: 43%;
+		left: 17%;
+		width: 3%;
+	}
+	100% {
+		top: 45%;
+		left: 20%;
+		width: 20%;
+	}
+}
+
+.two>#fourth6 {
+	position: absolute;
+	top: 53%;
+	right: 7%;
+	width: 3%;
+	animation: 1s 1s donghuafour6 forwards;
+}
+
+@keyframes donghuafour6 {
+	from {
+		top: 53%;
+		right: 7%;
+		width: 3%;
+	}
+	100% {
+		top: 55%;
+		right: 10%;
+		width: 20%;
+	}
+}
+
+.two>#fourth7 {
+	position: absolute;
+	top: 59%;
+	left: 7%;
+	width: 3%;
+	animation: 1s 1s donghuafour7 forwards;
+}
+
+@keyframes donghuafour7 {
+	from {
+		top: 59%;
+		left: 7%;
+		width: 3%;
+	}
+	100% {
+		top: 62%;
+		left: 10%;
+		width: 20%;
+	}
+}
+
+.two>#fourth8 {
+	position: absolute;
+	top: 75%;
+	left: 40%;
+	animation: 1s donghuafour8 forwards;
+}
+
+@keyframes donghuafour8 {
+	from {
+		top: 70%;
+		left: 37%;
+		width: 3%;
+	}
+	100% {
+		top: 75%;
+		left: 40%;
+		width: 20%;
+	}
+}
+
+#fourthText {
+	width: 50%;
+	height: 20%;
+	position: absolute;
+	top: 30%;
+	left: 25%;
+}
+
+#fourthText p {
+	color: white;
+	font-size: 3em;
+	padding-top: 15%;
+	padding-left: 10%;
+	text-align: center;
+	z-index: 3;
+}
+
+#noneDiv {
+	position: absolute;
+	top: 30%;
+	width: 100%;
+	height: 70%;
+	opacity: 0;
+	z-index: -2;
+}
+
+.Down {
+	width: 30%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.show {
+	position: absolute;
+	left: 10%;
+	top: 20%;
+	width: 80%;
+	height: 60%;
+}
+
+.left {
+	position: absolute;
+	left: 0;
+	height: 10%;
+	top: 45%;
+}
+
+.right {
+	position: absolute;
+	right: 0;
+	height: 10%;
+	top: 45%;
+}
